@@ -1,0 +1,13 @@
+[package]
+name = "sudoku-tester"
+version = "0.0.0"
+publish = false
+authors = ["cyphersnake <cyphersnake@pm.me>"]
+description = "A simple crate that checks whether a completed sudoku of standard size is valid"
+edition = "2021"
+
+[dependencies]
+# Just like to use the logic of `err_or` to aggregate errors
+some-to-err = "0.2.1"
+# There's no particular reason to save memory, but why not!
+tinyvec = "1.6.0"
